@@ -1,0 +1,12 @@
+<div
+  class="course-card"
+  appHighlight="lightblue"
+  [ngClass]="cardClasses"
+  [ngStyle]="{
+    'border-left':
+      course.gradeStatus == 'passed'
+        ? '8px solid green'
+        : course.gradeStatus == 'failed'
+        ? '8px solid red'
+        : '8px solid gray'
+  }">
